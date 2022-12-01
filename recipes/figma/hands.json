@@ -1,0 +1,236 @@
+[
+  {
+    "type": "ItemGroup",
+    "name": "itemGroup: #plastic, grp1",
+    "children": [
+      {
+        "name": "Background",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "type": "rectangle",
+        "fillType": "SOLID",
+        "fillColor": { "r": 0.9803921580314636, "g": 0.9803921580314636, "b": 0.9803921580314636 }
+      },
+      { "name": "mask A_Beauty", "blendMode": "PASS_THROUGH", "opacity": 1, "type": "mask", "isMask": true },
+      { "name": "COLOR (Normal, 100%)", "blendMode": "PASS_THROUGH", "opacity": 1 },
+      {
+        "name": "SHADES",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "children": [
+          { "name": "Shades (Multiply, 100%)", "blendMode": "MULTIPLY", "opacity": 1, "type": "image" },
+          {
+            "name": "Shades (Soft Light, 40%)",
+            "blendMode": "SOFT_LIGHT",
+            "opacity": 0.4000000059604645,
+            "type": "image"
+          }
+        ],
+        "type": "group"
+      },
+      { "name": "COLOR (Hard Light, 50%)", "blendMode": "HARD_LIGHT", "opacity": 0.5 },
+      {
+        "name": "HIGHLIGHTS",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "children": [
+          { "name": "Hightlights (Screen, 100%)", "blendMode": "SCREEN", "opacity": 1, "type": "image" },
+          {
+            "name": "Hightlights (Soft Light, 40%)",
+            "blendMode": "SOFT_LIGHT",
+            "opacity": 0.4000000059604645,
+            "type": "image"
+          }
+        ],
+        "type": "group"
+      }
+    ]
+  },
+  {
+    "type": "ItemGroup",
+    "name": "itemGroup: #plastic, grp2",
+    "children": [
+      {
+        "name": "Background",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "type": "rectangle",
+        "fillType": "SOLID",
+        "fillColor": { "r": 0.9803921580314636, "g": 0.9803921580314636, "b": 0.9803921580314636 }
+      },
+      {
+        "name": "<Hand>",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "children": [
+          { "name": "mask A_Beauty", "blendMode": "PASS_THROUGH", "opacity": 1, "type": "mask", "isMask": true },
+          { "name": "COLOR (Normal, 100%)", "blendMode": "PASS_THROUGH", "opacity": 1 },
+          {
+            "name": "SHADES",
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "children": [
+              { "name": "Shades (Multiply, 100%)", "blendMode": "MULTIPLY", "opacity": 1, "type": "image" },
+              {
+                "name": "Shades (Soft Light, 40%)",
+                "blendMode": "SOFT_LIGHT",
+                "opacity": 0.4000000059604645,
+                "type": "image"
+              }
+            ],
+            "type": "group"
+          },
+          { "name": "COLOR (Hard Light, 50%)", "blendMode": "HARD_LIGHT", "opacity": 0.5 },
+          {
+            "name": "HIGHLIGHTS",
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "children": [
+              { "name": "Hightlights (Screen, 100%)", "blendMode": "SCREEN", "opacity": 1, "type": "image" },
+              {
+                "name": "Highlights (Soft Light, 40%)",
+                "blendMode": "SOFT_LIGHT",
+                "opacity": 0.4000000059604645,
+                "type": "VECTOR"
+              }
+            ],
+            "type": "group"
+          }
+        ],
+        "type": "group"
+      },
+      {
+        "name": "<Phone>",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "children": [
+          { "name": "mask Puzzle_2", "blendMode": "PASS_THROUGH", "opacity": 1, "type": "mask", "isMask": true },
+          { "name": "Beauty - bake mask contour Puzzle_2", "blendMode": "PASS_THROUGH", "opacity": 1, "type": "image" },
+          {
+            "name": "Body Color",
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "children": [
+              {
+                "name": "mask PuzzleBodyColor",
+                "blendMode": "PASS_THROUGH",
+                "opacity": 1,
+                "type": "mask",
+                "isMask": true
+              },
+              { "name": "COLOR (Soft Light, 70%)", "blendMode": "SOFT_LIGHT", "opacity": 0.699999988079071 },
+              { "name": "COLOR (Color, 100%)", "blendMode": "COLOR", "opacity": 0.75 }
+            ],
+            "type": "group"
+          },
+          {
+            "name": "MOCKUP",
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "children": [
+              {
+                "name": "mask PuzzleScreen minus PuzzleGlass",
+                "blendMode": "PASS_THROUGH",
+                "opacity": 1,
+                "type": "mask",
+                "isMask": true
+              },
+              {
+                "name": "-> PASTE SCREEN ARTWORK HERE <-",
+                "blendMode": "PASS_THROUGH",
+                "opacity": 1,
+                "type": "screen_coords"
+              }
+            ],
+            "type": "group"
+          }
+        ],
+        "type": "group"
+      }
+    ]
+  },
+  {
+    "type": "ItemGroup",
+    "name": "itemGroup: #plastic, grp4",
+    "children": [
+      {
+        "name": "Background",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "type": "rectangle",
+        "fillType": "SOLID",
+        "fillColor": { "r": 0.9803921580314636, "g": 0.9803921580314636, "b": 0.9803921580314636 }
+      },
+      {
+        "name": "<Hand>",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "children": [
+          { "name": "mask A_Beauty", "blendMode": "PASS_THROUGH", "opacity": 1, "type": "mask", "isMask": true },
+          { "name": "COLOR (Normal, 100%)", "blendMode": "PASS_THROUGH", "opacity": 1 },
+          {
+            "name": "SHADES",
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "children": [
+              { "name": "Shades (Multiply, 100%)", "blendMode": "MULTIPLY", "opacity": 1, "type": "image" },
+              {
+                "name": "Shades (Soft Light, 40%)",
+                "blendMode": "SOFT_LIGHT",
+                "opacity": 0.4000000059604645,
+                "type": "image"
+              }
+            ],
+            "type": "group"
+          },
+          { "name": "COLOR (Hard Light, 50%)", "blendMode": "HARD_LIGHT", "opacity": 0.5 },
+          {
+            "name": "HIGHLIGHTS",
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "children": [
+              { "name": "Hightlights (Screen, 100%)", "blendMode": "SCREEN", "opacity": 1, "type": "image" },
+              {
+                "name": "Highlights (Soft Light, 40%)",
+                "blendMode": "SOFT_LIGHT",
+                "opacity": 0.4000000059604645,
+                "type": "image"
+              }
+            ],
+            "type": "group"
+          }
+        ],
+        "type": "group"
+      },
+      {
+        "name": "<Card>",
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "children": [
+          { "name": "mask Puzzle_2", "blendMode": "PASS_THROUGH", "opacity": 1, "type": "mask", "isMask": true },
+          {
+            "name": "screen_coords",
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "type": "VECTOR",
+            "fillType": "SOLID",
+            "fillColor": { "r": 1, "g": 1, "b": 1 }
+          },
+          {
+            "name": "Shades (Hard Light, 45%) - bake mask contour Puzzle_2",
+            "blendMode": "HARD_LIGHT",
+            "opacity": 0.44999998807907104,
+            "type": "image"
+          },
+          {
+            "name": "Highlights (Screen, 100%) - bake mask contour Puzzle_2",
+            "blendMode": "SCREEN",
+            "opacity": 1,
+            "type": "image"
+          }
+        ],
+        "type": "group"
+      }
+    ]
+  }
+]
