@@ -12,7 +12,7 @@ export async function imageProcessing(item, material, camera, grp_number, pass, 
   // 3. Communicate that it's "Done"
   // MASK → GM
   if (pass.type == 'mask' && pass.processing.length == 1 && pass.processing[0].effectName == 'Invert') {
-    // await gm.invert(pass, pathsForPass);
+    await gm.invert(pass, pathsForPass);
     console.log('----');
     console.log('new Mask created ...');
   }
@@ -25,7 +25,7 @@ export async function imageProcessing(item, material, camera, grp_number, pass, 
   }
   // IMAGE → PHOTOSHOP
   else if (pass.type == 'raster' || pass.type == 'mask_subtract') {
-    // await photoshop.run(pass, pathsForPass, initSettings);
+    await photoshop.run(pass, pathsForPass, initSettings);
     console.log('----');
     console.log('raster file created ...');
   }
