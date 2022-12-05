@@ -1,7 +1,7 @@
 ﻿#target photoshop
 #include 'C:/Users/kosty/Documents/Adobe Scripts/node_render2app/utils/includes.jsx'
 #include 'C:/Users/kosty/Documents/Adobe Scripts/node_render2app/functions.jsx'
-#include 'C:/Users/kosty/Documents/Adobe Scripts/iographics_modules/iographics_general_functions.jsx'
+#include 'C:/Users/kosty/Documents/Adobe Scripts/iographics_modules/generalFunctions.jsx'
 
 /* 
   1. Initiate

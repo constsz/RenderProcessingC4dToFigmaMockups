@@ -27,7 +27,7 @@ export async function run(pass, pathsForPass, initSettings) {
 
         spawnSync('C:/Program Files (x86)/Adobe/Adobe ExtendScript Toolkit CC/ExtendScript Toolkit.exe', [
           '-run',
-          'C:/Users/kosty/Documents/Adobe Scripts/node_render2app/main.jsx',
+          '../photoshop/main.jsx',
         ]);
 
         const scriptPing = setInterval(() => {
